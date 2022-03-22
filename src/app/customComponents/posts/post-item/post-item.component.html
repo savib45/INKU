@@ -1,0 +1,40 @@
+<div class="col-sm-12 card-container" *ngIf="!post.onlyMe">
+  <mat-card>
+      <mat-card-header style="margin-bottom: 1rem;">
+        <div mat-card-avatar style="background-image: url('../../../../assets/images/img2.png');
+        background-size: cover;"></div>
+        <mat-card-title>Avinav</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="../../../../assets/images/img2.png" width="350" height="230" alt="User">
+      <mat-card-content class="card-content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores impedit, nemo officiis corrupti enim earum pariatur sed provident optio, eaque mollitia consequatur. Nostrum voluptatum odit optio, iusto dignissimos asperiores ullam?
+        </p>
+      </mat-card-content>
+      <mat-card-actions *ngIf="!myPost">
+        <button mat-flat-button (click)="support()" color="primary">Support &nbsp;
+          <svg class="heart" viewBox="0 0 32 29.6" style="color: red; width: 1.2rem;">
+              <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+              
+          </svg> 
+        </button>
+        <button mat-mini-fab color="warn" class="counter">
+          {{post.supportCount.length}}
+        </button>
+      </mat-card-actions>
+      <div *ngIf="myPost">
+        <button mat-flat-button disabled color="primary">Support &nbsp;
+          <svg class="heart" viewBox="0 0 32 29.6">
+              <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+          </svg> 
+        </button>
+        
+        <button mat-mini-fab color="warn" class="counter">
+          {{post.supportCount.length}}
+        </button>
+
+      </div>
+    </mat-card>
+</div>

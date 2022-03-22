@@ -1,0 +1,23 @@
+<h1 class="top-heading">Skin Doctor Near You</h1>
+<p class="top-2">Showing doctors in 5kms radius</p>
+
+
+<div class="map-container">
+    <div #map class="g-map"></div>
+</div>
+
+<div *ngIf="doctorsList;else noDoctors">
+    <h2 class="explore">Explore More</h2>
+    <div class="card-container">
+        <div class="card" *ngFor="let doctor of doctorsList">
+            <h2>{{doctor.name}}</h2>
+            <p><strong>Rating:</strong>{{doctor.rating}}</p>
+            <p><strong>Vicinity:</strong>{{doctor.vicinity}}</p>
+        </div>
+    </div>
+</div>
+
+<ng-template #noDoctors>
+    <h2 class="explore">No doctors found</h2>
+</ng-template>
+

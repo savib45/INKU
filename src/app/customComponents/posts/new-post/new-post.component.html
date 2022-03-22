@@ -1,0 +1,35 @@
+<h1 class="top-heading" style="text-align: center;">Today I am happy about...</h1>
+
+<section class="mt-5">
+    <div class="container">
+        <div class="row mx-auto">
+            <form (ngSubmit)="onSubmit()" #f="ngForm">
+                <div class="form-floating">
+                    <mat-form-field style="width: 100%;">
+                        <!-- <mat-label>How are you feeling?</mat-label> -->
+                        <textarea matInput matInput placeholder="Put your content here..." ngModel name="text"></textarea>
+                    </mat-form-field> 
+                </div>
+                <div class="d-flex flex-row align-items-center mt-3">
+                    <!-- <button type="button" mat-raised-button (click)="fileInput.click()">Choose File</button>
+                    <input hidden (change)="onFileSelected()" #fileInput type="file" id="file"> -->
+        
+                        <!-- Fetch selected filed on change -->
+                        <input type="file" #fileInput id="uploadFile" (change)="uploadFileEvt($event)" name="uploadFile" accept="image/*" /> 
+                </div>
+                <div class="d-flex flex-row align-items-center mt-3">
+                    <mat-slide-toggle
+                        ngModel
+                        name="onlyMe">
+                        Only me
+                    </mat-slide-toggle>
+                </div>
+                <div class="text-right mt-5">
+                    <button mat-raised-button color="primary" type="submit">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
