@@ -23,7 +23,11 @@ button{
 
 .topbar{
   /* background-image: url(./../assets/images/light_orange_pink_blue_waves_4k_5k_hd_abstract.jpg); */
+<<<<<<< HEAD
   background-color: #0288d1;
+=======
+  background-color: #039be5;
+>>>>>>> master
   background-size: 100% 2rem;
   position: relative;
   height: 5rem;
@@ -67,7 +71,11 @@ mat-toolbar{
 
 mat-sidenav{
   height: 100%;
+<<<<<<< HEAD
   background-color:#0288d1;
+=======
+  background-color:#039be5;
+>>>>>>> master
   overflow-x: hidden;
   transition: all;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -109,7 +117,11 @@ mat-sidenav{
   outline: none;
   border-radius: 8px;
   transition: all 0.3s;
+<<<<<<< HEAD
   background: #0288d1;
+=======
+  background: #039be5;
+>>>>>>> master
   color: #fff;
   border: 1px solid #fff;
 }
@@ -125,7 +137,11 @@ mat-sidenav{
     display: none;
   }
   .topbar{
+<<<<<<< HEAD
     background-color: #0288d1;
+=======
+    background-color: #039be5;
+>>>>>>> master
   background-size: 100% 2rem;
   }
   mat-sidenav-content{
@@ -174,7 +190,11 @@ h1.example-app-name {
 
 .sidenav-routes .link:hover{
   background: #ffeef2;
+<<<<<<< HEAD
   color: #0288d1;
+=======
+  color: #039be5;
+>>>>>>> master
 }
 
 @media (max-width: 762px) {
