@@ -3,6 +3,7 @@
 button{
   background: transparent;
   border: none;
+  font-size: 1.7rem;
 }
 
 .navbar-icon{
@@ -92,6 +93,7 @@ mat-sidenav{
 
 .usersNameTxt, .greetTxt{
   color: #fff;
+  font-size: 1.5rem;
 }
 .usersNameTxt{
   font-size: 1.8rem;
