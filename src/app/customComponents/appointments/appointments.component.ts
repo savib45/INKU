@@ -10,20 +10,20 @@ declare const Calendly: any;
 
 export class AppointmentsComponent implements OnInit {
 
-  @ViewChild('appointmentCalendar') appointmentCalendar!: ElementRef
+  // @ViewChild('appointmentCalendar') appointmentCalendar!: ElementRef
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  ngAfterViewInit(){
-    Calendly.initInlineWidget({
-      url: 'https://zoom.us/',
-      parentElement: this.appointmentCalendar.nativeElement,
-      prefill: {},
-      utm: {}
-    });
-  }
+  // ngAfterViewInit(){
+  //   Calendly.initInlineWidget({
+  //     url: 'https://zoom.us/',
+  //     parentElement: this.appointmentCalendar.nativeElement,
+  //     prefill: {},
+  //     utm: {}
+  //   });
+  // }
 
 }

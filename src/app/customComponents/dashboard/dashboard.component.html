@@ -1,49 +1,146 @@
-<div *ngIf="authService.userData as user">
-    <div class="toolbar">
-        <h4 class="toolbar-top text-center">INKU Tools</h4>
-        <div class="tool-box d-flex">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
 
-            <mat-card class="example-card tool" [routerLink]="['/upload-image']" routerLinkActive="router-link-active">
-                <mat-card-header>
-                    <mat-card-title class="card-header">Disease Detection</mat-card-title>
-                </mat-card-header>
-            </mat-card>
+<section class="home" id="home">
+  <div class="image">
+    <img src="../../../assets/images/First aid kit-bro .png" alt="" />
+  </div>
 
-            <mat-card class="example-card tool" [routerLink]="['/real-time']" routerLinkActive="router-link-active">
-                <mat-card-header>
-                    <mat-card-title class="card-header">Real-Time Detection</mat-card-title>
-                </mat-card-header>
-            </mat-card>
+  <div class="content">
+    <h3>Skin Care and Doctor Consultant System</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sed autem
+      vero? Magnam, est laboriosam!
+    </p>
+    <a
+      href="#"
+      class="btn"
+      [routerLink]="['/appointments']"
+      routerLinkActive="router-link-active"
+    >
+      See a Doctor <span class="fas fa-chevron-right"></span>
+    </a>
+  </div>
+</section>
+<section class="services" id="services">
+  <div *ngIf="authService.userData as user">
+    <h1 class="heading">INKU <span>services</span></h1>
+    <div class="box-container">
+      <div class="box">
+        <i class="fab fa-searchengin"></i>
+        <h3>Detect Disease</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.
+        </p>
+        <a
+          href="#"
+          class="btn"
+          [routerLink]="['/upload-image']"
+          routerLinkActive="router-link-active"
+        >
+          learn more <span class="fas fa-chevron-right"></span>
+        </a>
+      </div>
 
-            <mat-card class="example-card tool" [routerLink]="['/disease-tracker']" routerLinkActive="router-link-active">
-                <mat-card-header>
-                    <mat-card-title class="card-header">Your Disease Tracker</mat-card-title>
-                </mat-card-header>
-            </mat-card>
+      <div class="box">
+        <i class="fas fa-laptop-medical"></i>
+        <h3>Real Time Detection</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.
+        </p>
+        <a
+          href="#"
+          class="btn"
+          [routerLink]="['/real-time']"
+          routerLinkActive="router-link-active"
+        >
+          learn more <span class="fas fa-chevron-right"></span>
+        </a>
+      </div>
+      <div
+        class="box"
+        [routerLink]="['/disease-tracker']"
+        routerLinkActive="router-link-active"
+      >
+        <i class="fas fa-heartbeat"></i>
+        <h3>Disease Tracker</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.
+        </p>
+        <a
+          href="#"
+          class="btn"
+          [routerLink]="['/disease-tracker']"
+          routerLinkActive="router-link-active"
+        >
+          learn more <span class="fas fa-chevron-right"></span>
+        </a>
+      </div>
 
-            <mat-card class="example-card tool" [routerLink]="['/posts']" routerLinkActive="router-link-active">
-                <mat-card-header>
-                    <mat-card-title class="card-header">INKU Connect</mat-card-title>
-                </mat-card-header>
-            </mat-card>
-            
-            <mat-card class="example-card tool" [routerLink]="['/appointments']" routerLinkActive="router-link-active">
-                <mat-card-header>
-                    <mat-card-title class="card-header">See a Doctor</mat-card-title>
-                </mat-card-header>
-            </mat-card>
-            
-            <mat-card class="example-card tool" [routerLink]="['/nearby-doctors']" routerLinkActive="router-link-active">
-                <mat-card-header>
-                    <mat-card-title class="card-header">Doctors Near Me</mat-card-title>
-                </mat-card-header>
-            </mat-card>
-            
-            <mat-card class="example-card tool" [routerLink]="['/tips']" routerLinkActive="router-link-active">
-                <mat-card-header>
-                    <mat-card-title class="card-header">General Tips</mat-card-title>
-                </mat-card-header>
-            </mat-card>
-        </div>
+      <div class="box">
+        <i class="fas fa-people-arrows"></i>
+        <h3>INKU Connect</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.
+        </p>
+        <a
+          href="#"
+          class="btn"
+          [routerLink]="['/posts']"
+          routerLinkActive="router-link-active"
+        >
+          learn more <span class="fas fa-chevron-right"></span>
+        </a>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-user-md"></i>
+        <h3>See a Doctor</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.
+        </p>
+        <a
+          href="#"
+          class="btn"
+          [routerLink]="['/appointments']"
+          routerLinkActive="router-link-active"
+        >
+          learn more <span class="fas fa-chevron-right"></span>
+        </a>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-street-view"></i>
+        <h3>Doctor Near Me</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.
+        </p>
+        <a
+          href="#"
+          class="btn"
+          [routerLink]="['/nearby-doctors']"
+          routerLinkActive="router-link-active"
+        >
+          learn more <span class="fas fa-chevron-right"></span>
+        </a>
+      </div>
+      <div class="box">
+        <i class="fas fa-heartbeat"></i>
+        <h3>General Tips</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.
+        </p>
+        <a
+          href="#"
+          class="btn"
+          [routerLink]="['/tips']"
+          routerLinkActive="router-link-active"
+        >
+          learn more <span class="fas fa-chevron-right"></span>
+        </a>
+      </div>
     </div>
-</div>
+  </div>
+</section>
