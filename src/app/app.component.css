@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
 button{
   background: transparent;
   border: none;
@@ -6,7 +8,7 @@ button{
 .navbar-icon{
   position: absolute;
   left: 65px;
-  font-size: 35px;
+  font-size: 2.5rem;
   top: 30px;
   color: #fff;
   cursor: pointer;
@@ -32,13 +34,25 @@ button{
 .topbar-text{
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #fff;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 3rem;
+  padding-right: 10px;
 }
-
+.topbar-image{
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 90px;
+  width: 100px;
+  padding-bottom: 12px;
+  
+}
 mat-sidenav-content{
     overflow-x: hidden;
     background-color: #fff;
@@ -80,7 +94,7 @@ mat-sidenav{
   color: #fff;
 }
 .usersNameTxt{
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
@@ -141,7 +155,7 @@ h1.example-app-name {
 
 .sidenav-routes{
   color: #fff;
-  font-size: 16px;
+  font-size: 1.2rem;
   margin-top: 35px;
   width: 100%;
   text-align: center;
