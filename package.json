@@ -27,6 +27,7 @@
     "angular-font-awesome": "^3.1.2",
     "bootstrap": "^5.0.1",
     "chart.js": "^2.9.4",
+    "emailjs-com": "^3.2.0",
     "firebase": "^8.6.3",
     "ml5": "^0.6.1",
     "ng2-charts": "^2.4.2",

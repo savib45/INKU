@@ -38,7 +38,7 @@ export class NearbyDoctorsComponent implements OnInit {
         //creating a map and appending it to the #map element present in HTML - center is user's present location
         map = new google.maps.Map(this.mapElement.nativeElement, {
           center: { lat: position.coords.latitude, lng: position.coords.longitude },
-          zoom: 14
+          zoom: 15
         });
 
         //creating a maps service instance

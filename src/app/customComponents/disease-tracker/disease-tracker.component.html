@@ -1,7 +1,17 @@
+<h1 class="heading">Your<span> Tracker</span></h1>
+
 <div class="main-t-cont">
-    <div class="tracker-container">
-        <canvas baseChart [chartType]="'bar'" [datasets]="chartData" [labels]="labels" [options]="chartOptions"
-            [legend]="true" [colors]="colors" (chartClick)="onChartClick($event)">
-        </canvas>
-    </div>
+  <div class="tracker-container">
+    <canvas
+      baseChart
+      [chartType]="'bar'"
+      [datasets]="chartData"
+      [labels]="labels"
+      [options]="chartOptions"
+      [legend]="true"
+      [colors]="colors"
+      (chartClick)="onChartClick($event)"
+    >
+    </canvas>
+  </div>
 </div>

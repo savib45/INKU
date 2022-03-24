@@ -60,7 +60,14 @@
             >
               INKU Community
             </div>
-
+            <div
+              class="link"
+              [routerLink]="['/appointments']"
+              routerLinkActive="router-link-active"
+              (click)="toggle()"
+            >
+              See a Doctor
+            </div>
             <div
               class="link"
               [routerLink]="['/nearby-doctors']"
@@ -91,13 +98,18 @@
             <div class="content">
               <div class="topbar" *ngIf="authService.userData as user">
                 <button mat-icon-button (click)="toggle()" class="mat-btn-menu">
-                  <mat-icon style="font-size: 30px; height: 30px; width: 30px;">menu</mat-icon> Menu
+                  <mat-icon style="font-size: 30px; height: 30px; width: 30px"
+                    >menu</mat-icon
+                  >
+                  Menu
                 </button>
                 <div>
-                  <img src="../assets/icons/icon-72x72.png" alt="" class="topbar-image">
-                  <h3 class="topbar-text">
-                   INKU
-                  </h3>
+                  <img
+                    src="../assets/icons/icon-72x72.png"
+                    alt=""
+                    class="topbar-image"
+                  />
+                  <h3 class="topbar-text">INKU</h3>
                 </div>
               </div>
 

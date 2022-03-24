@@ -1,39 +1,45 @@
 <section class="upload_image">
-
-<div class="card">
+  <div class="card">
     <h1 class="heading">Detect <span>Diseases</span></h1>
+
     <div class="card-body d-flex justify-content-center">
-        <mat-form-field>
-            <div>
-                <mat-toolbar>
-                    <!-- Display files names -->
-                    <input matInput [(ngModel)]="fileAttr" readonly/>
+      <mat-form-field>
+        <div>
+          <mat-toolbar>
+            <!-- Display files names -->
+            <input matInput [(ngModel)]="fileAttr" readonly />
 
-                    <!-- Browse Button -->
-                    <button mat-flat-button>
-                        Browse File
-                    </button>
-                </mat-toolbar>
+            <!-- Browse Button -->
+            <button mat-flat-button>Browse File</button>
+          </mat-toolbar>
 
-                <!-- Fetch selected filed on change -->
-                <input type="file" #fileInput id="uploadFile" (change)="uploadFileEvt($event)" name="uploadFile" accept="image/*" />
-            </div>
-        </mat-form-field>
+          <!-- Fetch selected filed on change -->
+          <input
+            type="file"
+            #fileInput
+            id="uploadFile"
+            (change)="uploadFileEvt($event)"
+            name="uploadFile"
+            accept="image/*"
+          />
+        </div>
+      </mat-form-field>
     </div>
 
     <div class="card-footer">
-        <img src="{{ dataimage }}" #previewImg>
+      <img src="{{ dataimage }}" #previewImg />
     </div>
 
     <div *ngIf="dataimage" class="predict-btn-div">
-        <!--Emitting the event on click-->
-        <button mat-flat-button color="primary" (click)="predictEvt.emit()">
-            Predict
-        </button>
+      <!--Emitting the event on click-->
+      <button (click)="predictEvt.emit()" class="btn-predict">
+        Predict <span class="fas fa-search"></span>
+      </button>
     </div>
-</div>
-
-</section>
-<section class="general-medicine">
-
+  </div>
+  <!-- <div class="card-left">
+    <div class="side-image">
+      <img src="../../../assets/images/People search-rafiki.png" alt="" class="diesease-image">
+    </div>
+  </div> -->
 </section>

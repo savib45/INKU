@@ -1,3 +1,21 @@
+.heading {
+    text-align: center;
+    padding-top: 2rem;
+    padding: 2rem;
+    padding-bottom: 2rem;
+    text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    color: #444;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+  }
+  
+  .heading span {
+    text-transform: uppercase;
+    color: #0288d1;
+  }
+
 .canvasContainer{
     height: 80vh;
     display: flex;
