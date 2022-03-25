@@ -37,6 +37,7 @@ section:nth-child(even) {
   font-size: 5rem;
   font-weight: bold;
   letter-spacing: 0.4rem;
+  margin-bottom: 3rem;
 }
 
 .heading span {
@@ -125,7 +126,7 @@ section:nth-child(even) {
   align-items: center;
   flex-wrap: wrap;
   gap: 1.5rem;
-  padding-top: 10rem;
+  padding: 5.5rem;
 }
 
 .home .image {

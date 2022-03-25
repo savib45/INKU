@@ -1,3 +1,54 @@
+.heading {
+  text-align: center;
+  padding: 2rem;
+  padding-bottom: 2rem;
+  /* text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2); */
+  /* text-transform: uppercase; */
+  color: #444;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+  margin-bottom: 3rem;
+}
+
+.heading span {
+  /* text-transform: uppercase; */
+  color: #0288d1;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border: 0.2rem solid #0288d1;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 0 rgba(31, 22, 160, 0.2);
+  color: #0288d1;
+  cursor: pointer;
+  font-size: 1.7rem;
+  background: #fff;
+}
+
+.btn span {
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  background: #0288d1;
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+.btn:hover {
+  background: #0288d1;
+  color: #fff;
+}
+
+.btn:hover span {
+  color: #0288d1;
+  background: #fff;
+  margin-left: 1rem;
+}
+
 .posts-header {
   min-height: 15rem;
   background-color: #faf9f9;
