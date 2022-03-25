@@ -1,39 +1,84 @@
-.alert-customer{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 15px;
-    margin: 15px;
-  }
-  .btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem;
-    padding-left: 1rem;
-    border: 0.2rem solid #0288d1;
-    border-radius: 0.5rem;
-    box-shadow: 0.5rem 0.5rem 0 rgba(31, 22, 160, 0.2);
-    color: #0288d1;
-    cursor: pointer;
-    font-size: 1.7rem;
-    background: #fff;
-    text-decoration: none;
-  }
-  
-  .btn span {
-    padding: 0.7rem 1rem;
-    border-radius: 0.5rem;
-    background: #0288d1;
-    color: #fff;
-    margin-left: 0.5rem;
-  }
-  .btn:hover {
-    background: #0288d1;
-    color: #fff;
-  }
-  
-  .btn:hover span {
-    color: #0288d1;
-    background: #fff;
-    margin-left: 1rem;
-  }
+.alert-customer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px;
+  margin: 15px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border: 0.2rem solid #0288d1;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 0 rgba(31, 22, 160, 0.2);
+  color: #0288d1;
+  cursor: pointer;
+  font-size: 1.7rem;
+  background: #fff;
+  text-decoration: none;
+}
+
+.btn span {
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  background: #0288d1;
+  color: #fff;
+  margin-left: 0.5rem;
+}
+.btn:hover {
+  background: #0288d1;
+  color: #fff;
+}
+
+.btn:hover span {
+  color: #0288d1;
+  background: #fff;
+  margin-left: 1rem;
+}
+.result-output {
+  text-align: center;
+
+  color: #777;
+}
+.result-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #000;
+}
+.button-holder {
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  margin-left: 40px;
+}
+.result-button-save {
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  border: 0.2rem solid #0288d1;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 0 rgba(31, 22, 160, 0.2);
+  color:#fff ;
+  cursor: pointer;
+  font-size: 1.7rem;
+  background: #0288d1;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.result-button-close {
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  border: 0.2rem solid #0288d1;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 0 rgba(31, 22, 160, 0.2);
+  color: #0288d1;
+  cursor: pointer;
+  font-size: 1.7rem;
+  background: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
